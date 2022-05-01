@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="40dp"
+        android:background="@drawable/logo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin"
+        android:text="Lakwatsa App"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/subsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="31mm"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Sign In"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5mm"
+        android:layout_marginTop="2in"
+        android:drawableLeft="@drawable/username"
+        android:drawablePadding="15dp"
+        android:hint="Username" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5mm"
+        android:layout_marginVertical="2.35in"
+        android:drawableLeft="@drawable/pword"
+        android:drawablePadding="15dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signinbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="2.9in"
+        android:backgroundTint="#1c2b5c"
+        android:gravity="center"
+        android:padding="3.5mm"
+        android:text="Login"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/forgetpw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.35in"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Forgot Password?"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="Create an Account"
+        android:textAlignment="center"
+        android:textColor="#1c2b5c"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/prototype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="Eto muna pindutin"
+        android:textAlignment="center"
+        android:textColor="#1c2b5c"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+</RelativeLayout>

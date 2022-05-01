@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FF1C2B5C"
+        android:translationZ="2dp">
+
+        <ImageView
+            android:layout_width="57dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="11dp"
+            android:text="Mines View park"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:translationZ="1dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/minesviewpark" />
+
+                <RelativeLayout
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginBottom="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="Mines View Park"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="70dp"
+                        android:text="is an overlook park on the northeastern outskirts of Baguio in the Philippines. It is five kilometers away from the Heart of Baguio, passing through the Botanical Garden, the Mansion House, Wright Park, and the Pacdal Circle."
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/direction"
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/description"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:background="@drawable/button2"
+                    android:drawableStart="@drawable/ic_baseline_directions_24"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="40dp"
+                    android:text="Get Direction"
+                    android:textAllCaps="false"
+                    android:textSize="25sp"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/direction"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="36dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nearby Places"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="170dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button1"
+                            android:drawableLeft="@drawable/ic_baseline_hotel_24"
+                            android:drawablePadding="-40dp"
+                            android:paddingLeft="20dp"
+                            android:text="Hotels"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="170dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/button1"
+                            android:drawableLeft="@drawable/ic_baseline_restaurant_24"
+                            android:drawablePadding="-10dp"
+                            android:paddingLeft="20dp"
+                            android:text="Restaurant"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="107dp"
+                        android:layout_marginBottom="25dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="170dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button1"
+                            android:drawableLeft="@drawable/ic_baseline_hotel_24"
+                            android:drawablePadding="-40dp"
+                            android:paddingLeft="20dp"
+                            android:text="Hotels"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="170dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/button1"
+                            android:drawableLeft="@drawable/hotel"
+                            android:drawablePadding="-10dp"
+                            android:paddingLeft="20dp"
+                            android:text="Restaurant"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

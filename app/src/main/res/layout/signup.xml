@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="2mm"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lakwatsa App"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:background="@drawable/logo"
+            android:layout_marginLeft="2mm"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:gravity="center"
+        android:layout_marginTop="130dp"
+        android:textSize="36dp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5mm"
+        android:layout_marginTop="2.1in"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/username"
+            android:drawablePadding="10dp"
+            android:hint="Username" />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15pt"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="10dp"
+            android:hint="E-mail" />
+
+        <EditText
+            android:id="@+id/pword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15pt"
+            android:drawableLeft="@drawable/pword"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.1in"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Already have an Account?"
+        android:textSize="18dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signupbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="3.6in"
+        android:backgroundTint="#1c2b5c"
+        android:gravity="center"
+        android:padding="3.5mm"
+        android:text="Sign Up"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="55dp"
+        android:layout_marginTop="250dp"
+        android:drawableStart="@drawable/warning"
+        android:drawablePadding="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Enter your Username"
+        android:textColor="#B10808"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
